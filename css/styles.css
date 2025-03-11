@@ -20,6 +20,7 @@ body{
 .content{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 10px;
 }
 .card{
@@ -42,12 +43,21 @@ body{
     background-color: white;
 
 }
+.button:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 1px;
+}
 .selected{
     border: 1px solid white;
     color: white;
     background-color: rgb(25, 25, 73);
 }
+h3{
+    cursor: pointer;
+}
 .text{
+    position: relative;
+    bottom: 0;
     padding: 10px;
     text-align: center;
 }
